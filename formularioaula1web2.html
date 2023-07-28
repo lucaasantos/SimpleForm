@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CAMINHO DO CÓDIGO</h1><br>
+            <h4>Os melhores cursos de programação</h4>
+                <form id="dadospess">
+                    <legend id="legenda">Dados Pessoais:</legend>
+                        <div class="dadospess">
+                            Nome:<input type="text" name="" id="idade">
+                            Idade:<input type="number" name="" id="idade">
+                        </div>
+                </form>
+<form id="dadosprofissionais">
+    <legend id="legenda">Dados Profissionais:</legend>
+        <div class="dadosprof">
+            Escolaridade<select name="selectz" id="selecao">
+                            <option value="EnsMedio">Ensino Medio</option>
+                            <option value="EnsFundamental">Ensino Fundamental</option>
+                            <option value="Grad">Graduado</option>
+                            <option value="Tec">Tecnico</option>
+                        </select>
+                    <br><br>
+                <p id="legenda">Area De Atuação</p>
+            </div>
+                <input type="radio" name="opt1" onchange="aoSelecionarInput(event)">Gêrencia
+                <input type="radio" name="opt1" onchange="aoSelecionarInput(event)">Financeiro
+                <input type="radio" name="opt1" onchange="aoSelecionarInput(event)">Recepção
+            </div>
+</form>
+    </div>
+    <script>
+        function aoSelecionarInput (event) {
+            const inputClicado = event.target
+            
+            function removeSelecao () {
+                inputClicado.checked = false
+            }    
+        inputClicado.addEventListener('click', removeSelecao, { once: true })
+    }
+    </script>
+</body>
+</html>

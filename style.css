@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.dadospess {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#dadospess {
+    text-align: center;
+    padding: 5px;
+}
+.container {
+    width: 500px;
+    margin-top: 100px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    height: 400px;
+    background-color: rgb(111, 202, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h4 {
+    color: red;
+}
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+}
+#dadosprofissionais {
+    margin-top: 15px;
+    text-align: center;
+}
+#legenda {
+    font-size: 20px;
+    font-weight: bold;
+}
+
